@@ -77,7 +77,7 @@ syn region  puppetString        start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=pupp
 syn match   puppetNotVariable   "\\$\w\+" contained
 syn match   puppetNotVariable   "\\${\w\+}" contained
 
-syn keyword puppetKeyword       import inherits include require contain produces
+syn keyword puppetKeyword       import inherits include require contain produces consumes
 syn keyword puppetControl       case default if else elsif unless
 syn keyword puppetSpecial       true false undef
 
