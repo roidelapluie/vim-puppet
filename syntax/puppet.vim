@@ -69,6 +69,7 @@ syn region  puppetFunction      start="^\s*\(defined\|file\|fqdn_rand\|generate\
 
 syn match   puppetVariable      "$[a-zA-Z0-9_:]\+" contains=@NoSpell
 syn match   puppetVariable      "${[a-zA-Z0-9_:]\+}" contains=@NoSpell
+syn match   puppetVariable      "${[a-zA-Z0-9_:]\+\(\[\'[a-zA-Z0-9_]\+\'\]\)\+}" contains=@NoSpell
 
 " match anything between simple/double quotes.
 " don't match variables if preceded by a backslash.
